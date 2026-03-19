@@ -59,7 +59,7 @@ jobs:
         id: deploy
         working-directory: apps/portfolio
         run: |
-          URL=$(vercel deploy --token ${{ secrets.VERCEL_TOKEN }} 2>&1 | grep -E '^https://' | tail -1)
+          URL=$(vercel deploy --token ${{ secrets.VERCEL_TOKEN }} 2>&1 | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
           echo "Deployed to: $URL"
           echo "url=$URL" >> $GITHUB_OUTPUT
         env:
