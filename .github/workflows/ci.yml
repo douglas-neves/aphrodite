@@ -57,7 +57,6 @@ jobs:
 
       - name: Deploy to Vercel (Preview)
         id: deploy
-        working-directory: apps/portfolio
         run: |
           vercel deploy --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | tee /tmp/vercel-output.txt || true
           echo "=== FULL OUTPUT ==="
@@ -94,7 +93,6 @@ jobs:
         run: npm i -g vercel
 
       - name: Deploy to Vercel (Production)
-        working-directory: apps/portfolio
         run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
