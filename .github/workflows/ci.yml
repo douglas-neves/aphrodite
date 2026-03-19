@@ -59,43 +59,9 @@ jobs:
         id: deploy
         working-directory: apps/portfolio
         run: |
-          vercel deploy --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | tee /tmp/vercel-output.txt || true
-          echo "=== FULL OUTPUT ==="
-          cat /tmp/vercel-output.txt
-          echo "==================="
-          URL=$(grep -oE 'https://[^ ]+\.vercel\.app' /tmp/vercel-output.txt | tail -1)
+          URL=$(vercel deploy --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
           echo "Deployed to: $URL"
           echo "url=$URL" >> $GITHUB_OUTPUT
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
-  deploy-production:
-    name: Deploy Production
-    runs-on: ubuntu-latest
-    needs: check
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Install Vercel CLI
-        run: npm i -g vercel
-
-      - name: Deploy to Vercel (Production)
-        working-directory: apps/portfolio
-        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
