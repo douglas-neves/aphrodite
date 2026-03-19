@@ -15,8 +15,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - uses: actions/setup-node@v4
         with:
@@ -45,8 +43,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - uses: actions/setup-node@v4
         with:
@@ -63,8 +59,12 @@ jobs:
         id: deploy
         working-directory: apps/portfolio
         run: |
-          URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} \
-            2>&1 | grep -o 'https://[^ ]*vercel\.app' | tail -1)
+          vercel deploy --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | tee /tmp/vercel-output.txt || true
+          echo "=== FULL OUTPUT ==="
+          cat /tmp/vercel-output.txt
+          echo "==================="
+          URL=$(grep -oE 'https://[^ ]+\.vercel\.app' /tmp/vercel-output.txt | tail -1)
+          echo "Deployed to: $URL"
           echo "url=$URL" >> $GITHUB_OUTPUT
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -81,8 +81,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - uses: actions/setup-node@v4
         with:
