@@ -59,11 +59,11 @@ jobs:
         id: deploy
         working-directory: apps/portfolio
         run: |
-          OUTPUT=$(vercel deploy --token ${{ secrets.VERCEL_TOKEN }} 2>&1)
+          vercel deploy --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | tee /tmp/vercel-output.txt || true
           echo "=== FULL OUTPUT ==="
-          echo "$OUTPUT"
+          cat /tmp/vercel-output.txt
           echo "==================="
-          URL=$(echo "$OUTPUT" | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
+          URL=$(grep -oE 'https://[^ ]+\.vercel\.app' /tmp/vercel-output.txt | tail -1)
           echo "Deployed to: $URL"
           echo "url=$URL" >> $GITHUB_OUTPUT
         env:
