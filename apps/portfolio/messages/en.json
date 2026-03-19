@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "overview": "OVERVIEW",
+    "stack": "FRONTEND",
+    "backend": "BACKEND_CLOUD",
+    "career": "CAREER",
+    "education": "EDUCATION",
+    "hire": "HIRE_ME"
+  },
+  "hero": {
+    "status": "SYSTEM_STATUS: ACTIVE",
+    "line1": "FRONTEND",
+    "line2": "ENGINEER",
+    "bio": "Senior Solutions Architect and Frontend Specialist bridging the gap between high-performance engineering and visceral user experiences since 2010.",
+    "tag1": "[ UX_FOCUSED ]",
+    "tag2": "[ SCALABILITY_DRIVEN ]",
+    "coords": "COORD: 23.5505° S, 46.6333° W",
+    "version": "VER_4.0.2"
+  },
+  "overview": {
+    "title1": "SYSTEM_",
+    "title2": "OVERVIEW",
+    "decal": "DECAL_01",
+    "bio": "A trajectory forged in the furnace of 2010's web revolution. I transform complex business logic into surgical digital interfaces where UX quality isn't a metric, it's the foundation.",
+    "highlight": "UX quality",
+    "card1Title": "TRAJECTORY_START",
+    "card1Text": "Initialized professional development in 2010, witnessing the evolution from static monoliths to reactive distributed systems.",
+    "card2Title": "PHILOSOPHY",
+    "card2Text": "Architecting for the human element. If the code is perfect but the user struggles, the system is broken."
+  },
+  "stack": {
+    "title1": "MAIN_",
+    "title2": "STACK"
+  },
+  "abilities": {
+    "title1": "ABILITIES_",
+    "title2": "MATRIX"
+  },
+  "backendCloud": {
+    "title1": "BACKEND_",
+    "title2": "CLOUD",
+    "backendLabel": "BACKEND_LANGUAGES",
+    "cloudLabel": "CLOUD_INFRASTRUCTURE",
+    "mobileLabel": "MOBILE_DEVELOPMENT"
+  },
+  "missions": {
+    "title1": "MISSION_",
+    "title2": "LOGS",
+    "subtitle": "HISTORICAL_RECORDS",
+    "jobs": [
+      {
+        "company": "SEGUROS UNIMED",
+        "period": "12/2022 — PRESENT",
+        "role": "SOLUTIONS_ARCHITECT",
+        "description": "Creation of web applications using Next.js and Nuxt.js. Development, maintenance and dissemination of a Design System with Web Components compatible with all frameworks, documented with Storybook.",
+        "tags": ["NEXTJS", "VUE3", "WEB_COMPONENTS", "STORYBOOK"]
+      },
+      {
+        "company": "AVENUE CODE",
+        "period": "05/2022 — 12/2022",
+        "role": "SENIOR_FULLSTACK_ENGINEER",
+        "description": "Development of web applications for Fortune 500 clients. Stack: AWS S3, AWS Lambda, Next.js, TypeScript and React Native.",
+        "tags": ["NEXT.JS", "REACT_NATIVE", "AWS", "TYPESCRIPT"]
+      },
+      {
+        "company": "TRAY E-COMMERCE",
+        "period": "05/2015 — 12/2021",
+        "role": "SENIOR_FULLSTACK_DEVELOPER",
+        "description": "Web application development using Docker containers. Backend with PHP and Laravel, Frontend with Vue.js, React and Knockout. Reduced incidents by 60% and accelerated delivery by 40%.",
+        "tags": ["VUE.JS", "REACT", "PHP/LARAVEL", "DOCKER"]
+      }
+    ]
+  },
+  "academic": {
+    "title1": "ACADEMIC_",
+    "title2": "CORE",
+    "certTitle1": "CERTIFICATION_",
+    "certTitle2": "LOGS",
+    "education": [
+      {
+        "institution": "FATEC — FACULDADE DE TECNOLOGIA",
+        "course": "Systems Analysis and Development",
+        "period": "2009 — 2013",
+        "tag": "FORMAL_EDUCATION"
+      },
+      {
+        "institution": "SENAC",
+        "course": "Web Design & Interaction",
+        "period": "2012",
+        "tag": "CREATIVE_CORE"
+      }
+    ],
+    "certifications": [
+      "UDEMY: REACT.JS — THE_COMPLETE_GUIDE",
+      "UDEMY: VUE.JS — THE_COMPLETE_GUIDE",
+      "SENAC: DESIGN_E_INTERFACES"
+    ]
+  },
+  "cta": {
+    "line1": "LOOKING FOR A",
+    "line2": "FRONTEND_SPECIALIST?",
+    "propose": "SEND_PROPOSAL",
+    "repo": "VIEW_REPOSITORY"
+  },
+  "footer": {
+    "copy": "©2026 DOUGLAS.NEVES — BUILT_WITH_PRECISION",
+    "stable": "STABLE_CONNECTION"
+  }
+}

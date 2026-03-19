@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "overview": "VISÃO_GERAL",
+    "stack": "FRONTEND",
+    "backend": "BACKEND_CLOUD",
+    "career": "CARREIRA",
+    "education": "FORMAÇÃO",
+    "hire": "CONTRATAR"
+  },
+  "hero": {
+    "status": "STATUS_SISTEMA: ATIVO",
+    "line1": "FRONTEND",
+    "line2": "ENGINEER",
+    "bio": "Arquiteto de Soluções Sênior e Especialista Frontend conectando engenharia de alta performance com experiências de usuário memoráveis desde 2010.",
+    "tag1": "[ FOCO_EM_UX ]",
+    "tag2": "[ ESCALABILIDADE ]",
+    "coords": "COORD: 23.5505° S, 46.6333° O",
+    "version": "VER_4.0.2"
+  },
+  "overview": {
+    "title1": "VISÃO_",
+    "title2": "GERAL",
+    "decal": "DECAL_01",
+    "bio": "Uma trajetória forjada na revolução web dos anos 2010. Transformo lógica de negócio complexa em interfaces digitais cirúrgicas onde a qualidade de UX não é uma métrica, é o alicerce.",
+    "highlight": "qualidade de UX",
+    "card1Title": "INÍCIO_TRAJETÓRIA",
+    "card1Text": "Desenvolvimento profissional iniciado em 2010, acompanhando a evolução dos monolitos estáticos até os sistemas distribuídos e reativos.",
+    "card2Title": "FILOSOFIA",
+    "card2Text": "Arquitetando para o elemento humano. Se o código é perfeito mas o usuário luta, o sistema está quebrado."
+  },
+  "stack": {
+    "title1": "STACK_",
+    "title2": "PRINCIPAL"
+  },
+  "abilities": {
+    "title1": "MATRIZ_",
+    "title2": "HABILIDADES"
+  },
+  "backendCloud": {
+    "title1": "BACKEND_",
+    "title2": "CLOUD",
+    "backendLabel": "LINGUAGENS_BACKEND",
+    "cloudLabel": "INFRAESTRUTURA_CLOUD",
+    "mobileLabel": "DESENVOLVIMENTO_MOBILE"
+  },
+  "missions": {
+    "title1": "REGISTROS_",
+    "title2": "MISSÕES",
+    "subtitle": "HISTÓRICO_PROFISSIONAL",
+    "jobs": [
+      {
+        "company": "SEGUROS UNIMED",
+        "period": "12/2022 — PRESENTE",
+        "role": "ARQUITETO_DE_SOLUÇÕES",
+        "description": "Criação de aplicações web com Next.js e Nuxt.js. Desenvolvimento, manutenção e difusão de um Design System com Web Components compatíveis com todos os frameworks, documentado com Storybook.",
+        "tags": ["NEXTJS", "VUE3", "WEB_COMPONENTS", "STORYBOOK"]
+      },
+      {
+        "company": "AVENUE CODE",
+        "period": "05/2022 — 12/2022",
+        "role": "ENGENHEIRO_FULLSTACK_SÊNIOR",
+        "description": "Desenvolvimento de aplicações web para clientes Fortune 500. Stack: AWS S3, AWS Lambda, Next.js, TypeScript e React Native.",
+        "tags": ["NEXT.JS", "REACT_NATIVE", "AWS", "TYPESCRIPT"]
+      },
+      {
+        "company": "TRAY E-COMMERCE",
+        "period": "05/2015 — 12/2021",
+        "role": "DESENVOLVEDOR_FULLSTACK_SÊNIOR",
+        "description": "Desenvolvimento de aplicações web com containers Docker. Backend com PHP e Laravel, Frontend com Vue.js, React e Knockout. Reduziu incidentes em 60% e acelerou entregas em 40%.",
+        "tags": ["VUE.JS", "REACT", "PHP/LARAVEL", "DOCKER"]
+      }
+    ]
+  },
+  "academic": {
+    "title1": "FORMAÇÃO_",
+    "title2": "ACADÊMICA",
+    "certTitle1": "REGISTROS_",
+    "certTitle2": "CERTIFICAÇÕES",
+    "education": [
+      {
+        "institution": "FATEC — FACULDADE DE TECNOLOGIA",
+        "course": "Tecnólogo em Análise de Sistemas",
+        "period": "2009 — 2013",
+        "tag": "EDUCAÇÃO_FORMAL"
+      },
+      {
+        "institution": "SENAC",
+        "course": "Especialização em Design e Interfaces",
+        "period": "2012",
+        "tag": "NÚCLEO_CRIATIVO"
+      }
+    ],
+    "certifications": [
+      "UDEMY: REACT.JS — GUIA_COMPLETO",
+      "UDEMY: VUE.JS — GUIA_COMPLETO",
+      "SENAC: DESIGN_E_INTERFACES"
+    ]
+  },
+  "cta": {
+    "line1": "PROCURANDO UM",
+    "line2": "ESPECIALISTA_FRONTEND?",
+    "propose": "ENVIAR_PROPOSTA",
+    "repo": "VER_REPOSITÓRIO"
+  },
+  "footer": {
+    "copy": "©2026 DOUGLAS.NEVES — CONSTRUÍDO_COM_PRECISÃO",
+    "stable": "CONEXÃO_ESTÁVEL"
+  }
+}
